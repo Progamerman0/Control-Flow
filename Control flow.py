@@ -16,5 +16,17 @@ lastName = input("What is your last name: ")
 
 print("Welcome to Cash R Us,", firstName, lastName + ", we will now set up a pin for your account.\n")
 
-print("\nWould you like to make a transaction through our ATM")
+pin = input("Please choose your PIN: ")
 
+print("\nThank you", firstName + ", we see you set your PIN to", pin)
+
+print("\nWould you like to make a transaction through our ATM?")
+atm = input("Yes or No: ").lower()
+if atm == "yes":
+    print("\n********************************************\n")
+
+
+
+
+else:
+    print("Have a great day", firstName, lastName + ", please come and visit soon.")
