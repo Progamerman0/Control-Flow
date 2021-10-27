@@ -26,6 +26,16 @@ if atm == "yes":
     print("\n********************************************\n")
 
 
+    #This part of the program will ask users to complete a transaction through the ATM
+    print("Please insert your card\n")
+    print("Welcome to Cash-R-Us ATM", firstName, lastName, "\n")
+    userPIN = input("Enter your PIN: ")
+
+    if userPIN == pin:
+        balance = "100000"
+        print("Your balance: $" + balance)
+    else:
+        print("Sorry", firstName, lastName, "your PIN dosen't match our records.")
 
 
 else:
