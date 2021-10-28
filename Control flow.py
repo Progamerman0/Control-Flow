@@ -1,8 +1,8 @@
-#Programer: Spencer Kohler
-#Date: 10-11-2021
-#Program: ATM Bank Transaction
-
 """
+Programer: Spencer Kohler
+Date: 10-11-2021
+Program: ATM Bank Transaction
+
 This program simulates an ATM utilizing if, elif, and else statements
 Nesting if statments and refresh our comparison and logical operators
 """
@@ -41,6 +41,11 @@ if atm == "yes":
         if typeOfTransaction == "w":
             withdrawlAmount = int(input("How much do you wish to withdrawl: "))
             balance = balance - withdrawlAmount
+            print("Your new balance is: $" + str(balance))
+        
+        elif typeOfTransaction == "d":
+            depositAmount = int(input("How much do you want to deposit: "))
+            balance = balance + depositAmount
             print("Your new balance is: $" + str(balance))
 
     else:
