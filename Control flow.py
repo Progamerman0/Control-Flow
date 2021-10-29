@@ -36,7 +36,7 @@ if atm == "yes":
         print("Your balance: $" + str(balance))
 
         #Ask users what kind of transaction they want
-        typeOfTransaction = input("Would you like to deposit or or withdrawl\nW = withdrawal or D = deposite:").lower()
+        typeOfTransaction = input("Would you like to deposit or or withdrawl\nW = withdrawal, D = deposite, or B = balance: ").lower()
         
         if typeOfTransaction == "w":
             withdrawlAmount = int(input("How much do you wish to withdrawl: "))
@@ -47,6 +47,9 @@ if atm == "yes":
             depositAmount = int(input("How much do you want to deposit: "))
             balance = balance + depositAmount
             print("Your new balance is: $" + str(balance))
+
+        else:
+            print("Your current balance is: $" + str(balance))
 
     else:
         print("Sorry", firstName, lastName, "your PIN dosen't match our records.")
